@@ -1,0 +1,21 @@
+@use 'src/styles/vars';
+.task {
+  background-color: vars.$fontTache;
+  border: 1px solid vars.$bordureTache;
+  padding: 2rem;
+  margin-bottom: .5rem;
+  border-radius: 3px;
+  &__label {
+    font-size: 1.2em;
+  }
+  &__checkbox {
+    margin-right: 1rem;
+  }
+  &.task--done {
+    opacity: .5;
+  }
+  
+  &.task--done .task__label {
+    text-decoration: line-through;
+  }
+}
