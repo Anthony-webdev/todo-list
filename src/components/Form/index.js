@@ -10,7 +10,6 @@ function Form({ onSubmitForm, inputValue, onChangeInputValue }) {
   };
 
   const handleOnChange = (event) => {
-    // on récupère la valeur de l'input via event.target.value
     onChangeInputValue(event.target.value);
   };
 

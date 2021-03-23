@@ -1,6 +1,6 @@
 @use "sass:color";
 
-$fond: #2b305a;
+$fond: #2b575a;
 $fondInput: color.scale($fond, $lightness: -20%);
 $bordureInput: color.scale($fond, $lightness: -40%);;
 $ombreInterneInput: 25px rgba(0, 0, 0, .1);

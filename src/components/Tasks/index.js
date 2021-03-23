@@ -10,8 +10,6 @@ function Tasks({ tasks, onClickTask }) {
       key={task.id}
       {...task}
       onChangeTaskDone={onClickTask}
-      // done={task.done}
-      // label={task.label}
     />
   ));
 
@@ -21,18 +19,6 @@ function Tasks({ tasks, onClickTask }) {
     </ul>
   );
 }
-
-// version fonction fléchée
-// const Tasks = ({ tasks }) => (
-//   <ul className="tasks">
-//     {tasks.map((task) => (
-//       <Task
-//         key={task.id}
-//         {...task}
-//       />
-//     ))}
-//   </ul>
-// );
 
 Tasks.propTypes = {
   tasks: PropTypes.arrayOf(
